@@ -37,11 +37,3 @@ Non è necessario installare Visual Studio o compilare il codice per usare l'app
 > ⚠️ **Nota su Windows SmartScreen:** Trattandosi di un software indipendente non firmato con un certificato commerciale costoso, Windows potrebbe mostrare un avviso al primo avvio. Clicca su *"Maggiori informazioni"* e poi su *"Esegui comunque"*.
 
 ---
-
-## 💻 Sviluppo e Compilazione Locale
-
-Se desideri modificare il codice sorgente o compilare l'app autonomamente tramite Visual Studio:
-
-1. Clona il repository:
-   ```bash
-   git clone [https://github.com/IL_TUO_USER_GITHUB/IL_TUO_REPO.git](https://github.com/IL_TUO_USER_GITHUB/IL_TUO_REPO.git)
