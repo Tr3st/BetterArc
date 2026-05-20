@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+
+/* Scrollbar personalizzata stile minimal */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+/* Stile per gli input range */
+input[type=range] {
+    cursor: pointer;
+}
+    /* Personalizzazione barra dello slider */
+    input[type=range]::-webkit-slider-runnable-track {
+        background: rgba(51, 65, 85, 0.5); /* slate-700 opaco */
+        border-radius: 99px;
+        height: 6px;
+    }
+
+    input[type=range]::-webkit-slider-thumb {
+        appearance: none;
+        height: 16px;
+        width: 16px;
+        background: #10b981; /* emerald-500 */
+        border-radius: 50%;
+        margin-top: -5px;
+        box-shadow: 0 0 10px rgba(16, 185, 129, 0.5);
+        border: 2px solid #0f172a; /* slate-900 */
+    }
+
+.max-h-0 {
+    max-height: 0;
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    opacity: 0;
+}
+
+.max-h-\[500px\] {
+    max-height: 500px; /* Valore superiore all'altezza reale */
+    opacity: 1;
+}
+
+/* Transizione fluida per l'altezza */
+.transition-all {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* Rimuovi le vecchie regole della scrollbar e usa queste */
+.custom-scrollbar {
+    overflow-y: auto;
+    padding-right: 20px; /* Spazio per "staccare" la barra dal bordo della finestra */
+}
+
+    .custom-scrollbar::-webkit-scrollbar {
+        width: 6px; /* Sottile */
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+        background: rgba(255, 255, 255, 0.05); /* Quasi invisibile di default */
+        border-radius: 10px;
+        transition: background 0.3s ease;
+    }
+
+    /* Si vede solo quando ci passi sopra */
+    .custom-scrollbar:hover::-webkit-scrollbar-thumb {
+        background: rgba(255, 255, 255, 0.2);
+    }
